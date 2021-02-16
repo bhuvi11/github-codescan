@@ -61,5 +61,5 @@ jobs:
       with: 
         name: CodeQl-scan-reports
         path: reports
-    - run: "Workflow ID = $GITHUB_RUN_ID"  
+    - run: echo "Workflow ID = $GITHUB_RUN_ID"  
     - run: echo "GITHUB_WORKSPACE = $GITHUB_WORKSPACE"
