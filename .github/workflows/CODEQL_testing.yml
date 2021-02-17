@@ -55,7 +55,8 @@ jobs:
       uses: github/codeql-action/analyze@v1
       with:
         output: reports
-     
+    - name: fetch result
+    - run: echo cat "/home/runner/work/github-codescan/github-codescan/reports/java-builtin.sarif" >>filename.txt
     - name: Upload artifacts
       uses: actions/upload-artifact@v1.0.0
       with: 
