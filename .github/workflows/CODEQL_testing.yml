@@ -57,6 +57,7 @@ jobs:
         output: reports
     
     - run:  cat "/home/runner/work/github-codescan/github-codescan/reports/java-builtin.sarif" >>filename.txt
+    - run: echo $filename.txt
     - name: Upload artifacts
       uses: actions/upload-artifact@v1.0.0
       with: 
