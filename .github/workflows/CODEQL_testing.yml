@@ -62,7 +62,7 @@ jobs:
     - run: ls $GITHUB_WORKSPACE/reports
     - run: ls  $GITHUB_WORKSPACE/output
     - run: cat "${{github.workspace}}/output/java-builtin.sarif"
-    - run: zip -r "${{github.workspace}}/output/java-builtin.sarif"
+    
     - name: Upload artifacts
       uses: actions/upload-artifact@v1.0.0
       with: 
