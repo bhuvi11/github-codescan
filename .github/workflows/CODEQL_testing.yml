@@ -58,6 +58,7 @@ jobs:
     
     - run: mkdir $GITHUB_WORKSPACE/output
     - run: cp /home/runner/work/github-codescan/github-codescan/reports/java-builtin.sarif $GITHUB_WORKSPACE/output
+    - run: ls $GITHUB_WORKSPACE
     - name: Upload artifacts
       uses: actions/upload-artifact@v1.0.0
       with: 
