@@ -37,7 +37,7 @@ jobs:
         # type: credscan,java
         # type: python
     - run: mkdir $GITHUB_WORKSPACE/output
-    - run: cp $GITHUB_WORKSPACE/reports/ $GITHUB_WORKSPACE/output
+    - run: cp -r $GITHUB_WORKSPACE/reports/ $GITHUB_WORKSPACE/output
     - run: ls $GITHUB_WORKSPACE/output
     - run: ls $GITHUB_WORKSPACE/reports
     - run: ls $GITHUB_WORKSPACE
