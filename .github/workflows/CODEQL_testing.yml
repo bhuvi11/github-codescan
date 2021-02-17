@@ -61,6 +61,7 @@ jobs:
     - run: ls $GITHUB_WORKSPACE
     - run: ls $GITHUB_WORKSPACE/reports
     - run: ls  $GITHUB_WORKSPACE/output
+    - run: cat "${{github.workspace}}/output/java-builtin.sarif"
     - name: Upload artifacts
       uses: actions/upload-artifact@v1.0.0
       with: 
@@ -68,7 +69,7 @@ jobs:
         path: reports
     - run: echo "Workflow ID = $GITHUB_RUN_ID"  
     - run: echo "GITHUB_WORKSPACE = $GITHUB_WORKSPACE"
-    - run: cat "/home/runner/work/github-codescan/github-codescan/reports/java-builtin.sarif"
+    #- run: cat "/home/runner/work/github-codescan/github-codescan/reports/java-builtin.sarif"
     - name : API calls
       run: |
         curl \
