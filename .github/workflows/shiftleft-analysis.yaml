@@ -5,7 +5,7 @@ name: SL Scanning
 
 # This section configures the trigger for the workflow. Feel free to customize depending on your convention
 on: 
-  push:
+ # push:
     
  # pull_request:
     # The branches below must be a subset of the branches above
