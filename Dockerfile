@@ -1,1 +1,1 @@
-FROM python:alpine
+FROM debian:9.2
